@@ -81,6 +81,9 @@ export default class App extends Component<AppProps, AppState> {
           <FilterBar filter={filter} updateFilter={this.updateFilter} />
           <Errors errors={errors} />
         </div>
+        <div id="logoDiv">
+            <img id="logo" src={chrome.extension.getURL('/pages/assets/icon128.png')} />
+        </div>
       </div>
       <InputOutput
         inputJson={inputJson}
